@@ -6,7 +6,7 @@ Several python libraries:
 - tweepy
 - requests
 
-In construction
 
+In construction
 # To do
 - Test units

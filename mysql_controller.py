@@ -1,7 +1,5 @@
 import mysql.connector
 from mysql.connector import errorcode
-from django.utils.dateparse import parse_datetime
-
 
 
 # Creates a connection with the database 'emergps'

@@ -1,15 +1,16 @@
 import requests
 
+# Disaster = { "name", "href", "graphic_url", "location", "created_at", "active"}
 
 # Get the 5 latest disasters from api.reliefweb
-def pulling_new_data_from_endpoint(number=1):
+def pull_new_data_from_endpoint(number=1):
     URI = "https://api.reliefweb.int/v1/disasters"
     query = {'limit': number, 'preset': 'latest', 'appname':'emergps'}
     return requests.get(URI, params=query).json()
 
 
 # After getting the latest disasters we retrieve the last
-def retrieve_ad_data_of_disaster(url):
+def get_additional_data_of_disaster(url):
     req = requests.get(url).json()
     req = req['data'][0]['fields'] # Remove some layers
     print req

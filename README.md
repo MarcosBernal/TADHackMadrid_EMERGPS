@@ -2,11 +2,14 @@ Python Script for validate the new data to process through different sources suc
 
 # Requeriments
 Python 2.7
-Several python libraries:
+Several python libraries (use `pip install [library]`):
 - tweepy
 - requests
+- mysql
+- mysql-connector==2.1.4
 
 
-In construction
 # To do
+- Integrate Twitter
+- 
 - Test units
